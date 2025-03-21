@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barbell Helper</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Barbell Calculator</h1>
+
+    <label for="exerciseSelect">Wybierz ćwiczenie:
+      <select id="exerciseSelect">
+        <option value="Deadlift">Deadlift</option>
+        <option value="Farmers Carry">Farmers Carry</option>
+        <option value="Front Squat">Front Squat</option>
+        <option value="Back Squat">Back Squat</option>
+        <option value="Overhead Squat">Overhead Squat</option>
+        <option value="Shoulder Press">Shoulder Press</option>
+        <option value="Push Press">Push Press</option>
+        <option value="Push Jerk">Push Jerk</option>
+        <option value="Thruster">Thruster</option>
+        <option value="Clean">Clean</option>
+        <option value="Power Clean">Power Clean</option>
+        <option value="Hang Clean">Hang Clean</option>
+        <option value="Hang Power Clean">Hang Power Clean</option>
+        <option value="Snatch">Snatch</option>
+        <option value="Power Snatch">Power Snatch</option>
+      </select>
+    </label>
+
+    <label>1RM (kg): 
+      <input type="number" id="rmInput" min="1">
+      <button id="clearRM" title="Wyczyść zapisany max">X</button>
+    </label>
+
+    <label>Waga sztangi:
+      <select id="barWeight">
+        <option value="15">15 kg</option>
+        <option value="20">20 kg</option>
+      </select>
+    </label>
+
+    <fieldset>
+      <legend>Dostępne talerze (zaznacz):</legend>
+      <label><input type="checkbox" value="25">25 kg</label>
+      <label><input type="checkbox" value="20">20 kg</label>
+      <label><input type="checkbox" value="10">10 kg</label>
+      <label><input type="checkbox" value="5">5 kg</label>
+      <label><input type="checkbox" value="2.5">2.5 kg</label>
+      <label><input type="checkbox" value="1.25">1.25 kg</label>
+      <label><input type="checkbox" value="1">1 kg</label>
+      <label><input type="checkbox" value="0.5">0.5 kg</label>
+    </fieldset>
+
+    <button id="calculateBtn">Oblicz</button>
+    <div id="results"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
